@@ -16,14 +16,13 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
-    extracted_text = model.predict(image)
+    gen_text = model.predict(image)
     st.write("Processing the image...")
 
-    # Extract text using pytesseract
     try:
        
-        st.success("Here is the extracted text:")
-        st.write(extracted_text)
+        st.success("Here is the Generated text:")
+        st.write(gen_text)
 
     except Exception as e:
         st.error(f"An error occurred: {e}")

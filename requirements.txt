@@ -1,12 +1,3 @@
 streamlit
-langchain
-sentence-transformers
-uvicorn
-ctransformers
-python-box
-langchain_community
 google_generativeai
-textwrap3
-pathlib
-ipython
 pillow
